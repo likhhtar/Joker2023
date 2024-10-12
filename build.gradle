@@ -51,5 +51,7 @@ tasks.register("jarParseStep1", FuzzerJar, "parse.step1")
 tasks.register("jarParseStep2", FuzzerJar, "parse.step2")
 tasks.register("jarParseStep3", FuzzerJar, "parse.step3")
 tasks.register("jarParse", FuzzerJar, "parse")
+tasks.register("jarParseJSONStep1", FuzzerJar, "parseJSON.step1")
+tasks.register("jarParseJSONStep2", FuzzerJar, "parseJSON.step2")
 
-jar.dependsOn(jarTimsort, jarRotate, jarParseStep1, jarParseStep2, jarParseStep3, jarParse)
+jar.dependsOn(jarTimsort, jarRotate, jarParseStep1, jarParseStep2, jarParseStep3, jarParse, jarParseJSONStep1, jarParseJSONStep2)
